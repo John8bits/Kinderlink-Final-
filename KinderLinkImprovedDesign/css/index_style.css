@@ -1,0 +1,404 @@
+html{
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f5f7fb;
+}
+
+section {
+    scroll-margin-top: 80px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #3b5cff;
+}
+
+img{
+    width:40px;
+    height: 40px;
+    margin-top:5px;
+}
+
+/* .logo-icon{
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+    width: 20px;
+} */
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.navbar nav .link:hover{
+    color:blue;
+}
+
+.login-btn:hover{color:white;}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.login-btn {
+    background: #3b5cff;
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 10px 15px 10px 10px;
+}
+
+.descript {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to right, #eef1f7, #dfe4f2);
+}
+
+.descript-content {
+    max-width: 700px;
+}
+
+.badge {
+    display: inline-block;
+    background: #c8d1f6;
+    color: #3b5cff;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 13px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.descript h1 {
+    font-size: 48px;
+    color: #3b5cff;
+    margin-bottom: 20px;
+}
+
+
+.descript p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.primary-btn {
+    background: #3b5cff;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.primary-btn:hover{
+    background-color: #2f4ae0;
+}
+
+.secondary-btn {
+    background: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/*ABOUT*/
+.about {
+    padding: 80px 10%;
+    background: #f8f9fc;
+    min-height: 100vh; 
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.about-header h2 {
+    font-size: 48px;
+    color: #2d43e8;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.about-header p {
+    font-size: 18px;
+    color: #5d6473;
+}
+
+.feature-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.card {
+    background: #ffffff;
+    border: 2px solid #d9dfeb;
+    border-radius: 15px;
+    padding: 35px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    border-color: blue;
+}
+.icon {
+    width: 65px;
+    height: 65px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+
+.card h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #111;
+}
+
+.card p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #5d6473;
+}
+
+
+.blue {
+    background: linear-gradient(135deg, #4c8dff, #155dfc);
+}
+
+.purple {
+    background: linear-gradient(135deg, #b44cff, #8613f7);
+}
+
+.violet {
+    background: linear-gradient(135deg, #6c63ff, #4a3df5);
+}
+
+/* .pink {
+    background: linear-gradient(135deg, #ff4db8, #e00074);
+} */
+
+.cyan {
+    background: linear-gradient(135deg, #1ec7ff, #0094cc);
+}
+
+.orange {
+    background: linear-gradient(135deg, #ff8c1a, #ff5e00);
+}
+
+.card h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #111;
+}
+
+.card p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #5d6473;
+}
+
+@media (max-width: 768px) {
+    .feature-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about-header h2 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 992px) {
+    .feature-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/*features*/
+.roles {
+    padding: 80px 10%;
+    text-align: center;
+    background: linear-gradient(to right, #eef1f7, #e6e9f5);
+}
+
+.roles-header h2 {
+    font-size: 50px;
+    color: #5a36ff;
+    margin-bottom: 10px;
+}
+
+.roles-header p {
+    color: #6b7280;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.roles-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.role-card {
+    width: 280px;
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    border: 2px solid #dbe2f1;
+    text-align: left;
+    transition: 0.3s;
+}
+
+.role-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    border-color: blue;
+}
+
+.role-icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.role-card h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.role-card span {
+    font-size: 13px;
+    color: #6b7280;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.role-card p {
+    font-size: 18px;
+    color: #555;
+}
+
+
+.blue {
+    background: linear-gradient(135deg, #4c8dff, #155dfc);
+}
+.purple {
+    background: linear-gradient(135deg, #b44cff, #8613f7);
+}
+.pink {
+    background: linear-gradient(135deg, #ff4db8, #e00074);
+}
+
+
+/*contact*/
+.footer {
+    background: linear-gradient(135deg, #0f1f4b, #4c1d95);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-logo h3 {
+    font-size: 20px;
+}
+
+.footer-sub {
+    font-size: 13px;
+    margin: 10px 0 20px;
+    opacity: 0.8;
+}
+
+.footer hr {
+    width: 60%;
+    margin: 20px auto;
+    border: 0.5px solid rgba(255,255,255,0.2);
+}
+
+.footer-email {
+    font-size: 12px;
+    margin-bottom: 10px;
+    opacity: 0.9;
+}
+
+.footer-copy {
+    font-size: 11px;
+    opacity: 0.6;
+}
+
+.icon i,
+.role-icon i {
+    font-size: 28px;
+    color: white;
+}
